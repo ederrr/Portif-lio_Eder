@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import { english, portuguese } from "../resources/getLanguage";
+import { englishNavibar as english, portugueseNavibar as portuguese, spanishNavibar as spanish } from "../resources/getLanguage";
 
 class Navibar extends Component {
 
@@ -16,6 +16,9 @@ class Navibar extends Component {
 		let script_temp = [];
 		if(language==='pt-br')
 			script_temp = portuguese;
+		else if(language === 'es'){
+			script_temp = spanish;
+		}
 		else
 			script_temp = english;
 
@@ -29,7 +32,9 @@ class Navibar extends Component {
 			<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
 			<div className="text-dark p-1 pr-md-5 mt-5" style={{fontFamily:'Knewave'}}>
 				<div className="mb-3">
-				<span onClick={()=>this.setLanguage('en-us')} className="d-inline-block m-1 flag-icon flag-icon-us"></span><span onClick={()=>this.setLanguage('pt-br')} className="d-inline-block flag-icon flag-icon-br m-1"></span>
+				<span onClick={()=>this.setLanguage('en')} className="d-inline-block m-1 flag-icon flag-icon-us small"></span>
+				<span onClick={()=>this.setLanguage('pt-br')} className="d-inline-block flag-icon flag-icon-br m-1 small"></span>
+				<span onClick={()=>this.setLanguage('es')} className="d-inline-block flag-icon flag-icon-es m-1 small"></span>
 				</div>
 				<p><Link className="text-dark" to={"/"}>{this.state.script[0]}</Link></p>
 				<p><Link className="text-dark" to={"/Galery"}>{this.state.script[1]}</Link></p>
