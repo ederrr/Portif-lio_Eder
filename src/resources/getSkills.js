@@ -51,5 +51,5 @@ export const skillsModeling = [
 
 ] 
 
-export const skills = [skillsProgrammer, skillsDesign, skillsMobile, skillsWeb, skillsModeling];
-export const icons = ["fas fa-code", "fas fa-paint-brush", "fab fa-android", "fas fa-at", "fab fa-codepen"];
+export const skills = [skillsProgrammer, skillsWeb, skillsMobile, skillsDesign, skillsModeling];
+export const icons = ["fas fa-code", "fas fa-at", "fab fa-android", "fas fa-paint-brush", "fab fa-codepen"];

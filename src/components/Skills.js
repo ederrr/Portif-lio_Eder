@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {portugueseSkills as titles} from '../resources/getLanguage';
+import {skillsScript as titles} from '../resources/getLanguage';
 import {skills, icons} from '../resources/getSkills';
+import {connect} from 'react-redux';
 
 class Skills extends Component {
 	
@@ -10,7 +11,7 @@ class Skills extends Component {
 
 		{skills.map( (skill, i) => { return (
 			<div>
-				<p className="h6 my-3">{titles[i]}</p>
+				<p className="h6 my-3">{titles[this.props.script][i]}</p>
 				<div className="div d-inline-block w-25">
 					{skill.map( (s) => { return (
 						<p className="h7 col my-1 small styleSkill">{s.name}<div className="progress border bg-white"><div className="progress-bar " style={{width:`${s.grade*10}%`}}></div></div></p>
@@ -25,4 +26,10 @@ class Skills extends Component {
 		)
 	}
 }
-export default Skills;
+
+const mapStateToProps = state => ({
+	script: state.script
+	
+});
+
+export default connect(mapStateToProps)(Skills);

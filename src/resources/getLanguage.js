@@ -6,3 +6,6 @@ export const englishSkills = ['Programming','Web','Mobile','Design','Modeling']
 
 export const spanishNavibar = ['Proyecto','Galería','Habilidades','Graduación','Contacto']
 export const spanishSkills = ['Programación','Web','Mobile','Diseño','Modelaje']
+
+export const navibarScript = [englishNavibar ,portugueseNavibar ,spanishNavibar ];
+export const skillsScript = [englishSkills ,portugueseSkills ,spanishSkills];

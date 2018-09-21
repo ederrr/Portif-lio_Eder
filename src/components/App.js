@@ -3,12 +3,15 @@ import Navibar from './Navibar';
 import Aside from './Aside';
 import Content from './Content';
 import { BrowserRouter as Router} from "react-router-dom";
+import {Provider} from 'react-redux';
+import store from './Store';
 
 class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-		  height: window.innerWidth,
+			width: window.innerWidth,
+			height: window.innerHeight,
 		};
 	  }
 	  
@@ -16,17 +19,19 @@ class App extends Component {
 		window.addEventListener('resize', this.handleWindowSizeChange);
 	  }
 	  
-	  componentWillUnmount() {
+	  componentWillUpdate() {
 		window.removeEventListener('resize', this.handleWindowSizeChange);
 	  }
-	handleWindowSizeChange = () => {
-		this.setState({ height: window.innerWidth });
+		handleWindowSizeChange = () => {
+			this.setState({ width: window.innerWidth });
+			this.setState({ height: window.innerHeight });
 	  };
 
 	render() {
-	const isMobile = this.state.height <= 800;
+	const isMobile = this.state.width <=800 ;
 	if(isMobile){
 	return (
+	<Provider store={store}>
 	<Router>
 	<div style={{width:'100%', height:'100vh', backgroundColor: '#EEE'}}>
 		<div className="d-inline-block bg-dark align-top" style={{width:'15%', height:'100%'}}>
@@ -38,9 +43,11 @@ class App extends Component {
 		</div>
 	</div>
 	</Router>
+	</Provider>
 	);
 	}else{
 		return (
+			<Provider store={store}>
 			<Router>
 			<div style={{width:'100%', height:'100vh', backgroundColor: '#EEE'}}>
 				<div className="d-inline-block bg-dark align-top" style={{width:'4%', height:'100%'}}>
@@ -52,6 +59,7 @@ class App extends Component {
 				</div>
 			</div>
 			</Router>
+			</Provider>
 			);
 	}
   }

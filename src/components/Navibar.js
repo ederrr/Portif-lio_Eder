@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import { englishNavibar as english, portugueseNavibar as portuguese, spanishNavibar as spanish } from "../resources/getLanguage";
+import { navibarScript } from "../resources/getLanguage";
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import * as languageActions from './actions/Language';
 
 class Navibar extends Component {
 
-	constructor(props){
-		super(props)
-		this.state = {
-			language:'pt-br',
-			script: english
-		}
-	}
-
 	setLanguage(language){
-		let script_temp = [];
+		let script_temp = 0;
 		if(language==='pt-br')
-			script_temp = portuguese;
+			script_temp = 1;
 		else if(language === 'es'){
-			script_temp = spanish;
+			script_temp = 2;
 		}
-		else
-			script_temp = english;
 
-		this.setState({ language: language, script: script_temp});
+		this.props.changeLanguage(language, script_temp);
 	}
 
 	render() {
@@ -36,21 +29,28 @@ class Navibar extends Component {
 				<span onClick={()=>this.setLanguage('pt-br')} className="d-inline-block flag-icon flag-icon-br m-1 small"></span>
 				<span onClick={()=>this.setLanguage('es')} className="d-inline-block flag-icon flag-icon-es m-1 small"></span>
 				</div>
-				<p><Link className="text-dark" to={"/"}>{this.state.script[0]}</Link></p>
-				<p><Link className="text-dark" to={"/Galery"}>{this.state.script[1]}</Link></p>
+				<p><Link className="text-dark" to={"/"}>{navibarScript[this.props.script][0]}</Link></p>
+				<p><Link className="text-dark" to={"/Galery"}>{navibarScript[this.props.script][1]}</Link></p>
 			</div>
 			<div className="border border-white rounded-circle my-auto" style={{width: 130, height:130}}>
 			<p className="d-flex justify-content-center mb-0 " style={{fontSize:13,fontFamily:'Impact', color:'#07454F'}}>Eder</p>
 			<p className="d-flex justify-content-center mt-0" style={{fontSize:70,fontFamily:'Impact', color:'#07454F'}}>RЯ</p>
 			</div>
 			<div className="text-dark p-1 pl-md-5 mt-5" style={{fontFamily:'Knewave'}}>
-				<p><Link className="text-dark" to={"/Skills"}>{this.state.script[2]}</Link></p>
-				<p><Link className="text-dark" to={"/Education"}>{this.state.script[3]}</Link></p>
-				<p><Link className="text-dark" to={"/Contact"}>{this.state.script[4]}</Link></p>
+				<p><Link className="text-dark" to={"/Skills"}>{navibarScript[this.props.script][2]}</Link></p>
+				<p><Link className="text-dark" to={"/Education"}>{navibarScript[this.props.script][3]}</Link></p>
+				<p><Link className="text-dark" to={"/Contact"}>{navibarScript[this.props.script][4]}</Link></p>
 			</div>
 		</div>
 	)
   }
 }
 
-export default Navibar;
+const mapDispatchToProps = dispatch => bindActionCreators(languageActions, dispatch);
+const mapStateToProps = state => ({
+	language: state.language,
+	script: state.script
+	
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navibar);
