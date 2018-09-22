@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import ListProject from './ListProject';
 import Galery from './Galery';
 import Skills from './Skills';
+import Education from './Education';
 
 class Content extends Component {
 	render() {
@@ -11,6 +12,7 @@ class Content extends Component {
 			<Route exact path="/" component={ListProject} />
     		<Route path="/Galery" component={Galery} />
 			<Route path="/Skills" component={Skills} />
+			<Route path="/Education" component={Education} />
 		</div>
 		)
 	}

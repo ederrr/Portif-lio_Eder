@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import { navibarScript } from "../resources/getLanguage";
+import { navibarScript } from "../resources/getScript";
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import * as languageActions from './actions/Language';
