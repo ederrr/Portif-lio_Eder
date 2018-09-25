@@ -12,7 +12,7 @@ export const englishCoursesLanguage = ['Languages']
 export const englishCoursesTechnical = ['Courses','to']
 export const englishCoursesGrade = ['University Degree','to']
 
-export const spanishNavibar = ['Proyecto','Galería','Habilidades','Graduación','Contacto']
+export const spanishNavibar = ['Proyectos','Galería','Habilidades','Graduación','Contacto']
 export const spanishSkills = ['Programación','Web','Mobile','Diseño','Modelaje']
 export const spanishCoursesOnline = ['Cursos Online','Carga Horária','Término','Link do Site','Certificado']
 export const spanishCoursesLanguage = ['Idiomas']
