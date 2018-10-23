@@ -11,7 +11,7 @@ class Aside extends Component {
 		<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/eder.ribeiro.180"><span className="fa fa-facebook text-white py-3" style={icon}/> </a>
 		<a target="_blank" rel="noopener noreferrer" href="mailto:eder.ribeiro@usp.com?Subject=Contact%20Me"><span className="fa fa-envelope text-white py-3" style={icon}/> </a>
 		<a target="_blank" rel="noopener noreferrer" href="https://github.com/ederrr/"><span className="fa fa-github text-white py-3" style={icon}/> </a>
-		<a target="_blank" rel="noopener noreferrer" href=""><span className="fa fa-file-text text-white py-3 " style={icon}/> </a>
+		<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1OynaM9gh0Id_39kokQhmXtM4NxLzDjWR"><span className="fa fa-file-text text-white py-3 " style={icon}/> </a>
 		</div>
 		)
 	}
