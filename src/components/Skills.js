@@ -5,13 +5,28 @@ import {connect} from 'react-redux';
 
 class Skills extends Component {
 	
+	constructor(props){
+		super(props)
+		this.state = {
+                  col :"",
+                  pos :""
+		}
+      }
+      componentDidMount(props){
+            if(this.props.isMobile)
+                  this.setState({col: "12", pos: "0"});
+            else
+                  this.setState({col: "10", pos: "1"});
+
+	}
+	
 	render() {
 		return (
-		<div className="col col-12 ">
+		<div className={`col col-${this.state.col} offset-${this.state.pos}`}>
 
 		{skills.map( (skill, i) => { return (
 			<div>
-				<div className="rounded-top p-2 small my-3" style={{backgroundColor: '#07454F'}}>
+				<div className="rounded-top p-1" style={{backgroundColor: '#07454F'}}>
 					<p className="h6 font-weight-bold text-light">{titles[this.props.script][i]}</p>
         		</div>
 				<div className="div d-inline-block w-50">

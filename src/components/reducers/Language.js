@@ -1,4 +1,4 @@
-export default function language(state = {language:"pt-br", script: 1}, action){
+export default function language(state = {language:"en-us", script: 0}, action){
 
 	switch(action.type){
 		case 'CHANGE_LANGUAGE':

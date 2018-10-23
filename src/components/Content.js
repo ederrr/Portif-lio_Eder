@@ -8,11 +8,11 @@ import Education from './Education';
 class Content extends Component {
 	render() {
 		return (
-		<div className="pt-2 pt-md-5 px-1 px-md-5" style={{overflowY: 'auto', height:'68vh' }} >
-			<Route exact path="/" component={ListProject} />
-    		<Route path="/Galery" component={Galery} />
-			<Route path="/Skills" component={Skills} />
-			<Route path="/Education" component={Education} />
+		<div className="pt-2 pt-md-4 px-1 px-md-5" style={{overflowY: 'auto', height:`${this.props.sizeScreen}` }} >
+			<Route exact path="/" component={ListProject} isMobile={this.props.isMobile} />
+    		<Route path="/Galery" component={Galery} isMobile={this.props.isMobile}/>
+			<Route path="/Education" render={props => <Education {...props} isMobile={this.props.isMobile} />} />
+			<Route path="/Skills" render={props => <Skills {...props} isMobile={this.props.isMobile} />} />
 		</div>
 		)
 	}
