@@ -18,16 +18,16 @@ export const portugueseCoursesLanguage = [
 export const englishCoursesLanguage = [
 
     {
-        language: 'Inglês',
-        level: 'Avançado',
-        school: 'Escola de Idiomas CAASO',
-        city: 'São Carlos - SP',
+        language: 'English',
+        level: 'Advanced',
+        school: 'Languages School CAASO',
+        city: 'São Carlos - SP - Brazil',
     },
     {
-        language: 'Espanhol',
-        level: 'Básico',
+        language: 'Spanish',
+        level: 'Beginner',
         school: 'Instituto Gestor',
-        city: 'São Carlos - SP',
+        city: 'São Carlos - SP - Brazil',
     },
     
     ] 

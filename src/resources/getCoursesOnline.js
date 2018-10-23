@@ -62,7 +62,7 @@ export const englishCoursesOnline = [
     {
         course: 'Introdução ao Front End',
         school: 'TIM Tec',
-        time: '40 horas',
+        time: '40 hours',
         finish: "22/05/2016",
         site: 'https://cursos.timtec.com.br/courses',
         degree: 'https://drive.google.com/open?id=0B8jNdEvSEyFZa0RRVjJaSFg4Q00',
@@ -70,7 +70,7 @@ export const englishCoursesOnline = [
     {
         course: 'CSS3',
         school: 'TIM Tec',
-        time: '40 horas',
+        time: '40 hours',
         finish: "26/05/2016",
         site: 'https://cursos.timtec.com.br/courses',
         degree: 'https://drive.google.com/open?id=0B8jNdEvSEyFZcVBHZFlvb2QxXzg',
@@ -78,7 +78,7 @@ export const englishCoursesOnline = [
     {
         course: 'JavaScript',
         school: 'TIM Tec',
-        time: '40 horas',
+        time: '40 hours',
         finish: "27/06/2016",
         site: 'https://cursos.timtec.com.br/courses',
         degree: 'https://drive.google.com/open?id=0B8jNdEvSEyFZYTRHeUpNQXhINVU',
@@ -86,7 +86,7 @@ export const englishCoursesOnline = [
     {
         course: 'Java',
         school: 'TIM Tec',
-        time: '40 horas',
+        time: '40 hours',
         finish: "05/07/2016",
         site: 'https://cursos.timtec.com.br/courses',
         degree: 'https://drive.google.com/open?id=0B8jNdEvSEyFZcDkyRG9DQ291ZWM',
@@ -94,7 +94,7 @@ export const englishCoursesOnline = [
     {
         course: 'HTML5',
         school: 'Curso em Vídeo',
-        time: '40 horas',
+        time: '40 hours',
         finish: "27/03/2017",
         site: 'https://www.cursoemvideo.com/course/',
         degree: 'https://drive.google.com/open?id=0B8jNdEvSEyFZM0NTeUZOTFVDTkU',
@@ -102,7 +102,7 @@ export const englishCoursesOnline = [
     {
         course: 'MySQL',
         school: 'Curso em Vídeo',
-        time: '40 horas',
+        time: '40 hours',
         finish: "01/11/2017",
         site: 'https://www.cursoemvideo.com/course/',
         degree: 'https://drive.google.com/open?id=1ZbzjoMYX20Z4L7KbBAewjMCA1o5Sy5OF',
@@ -110,7 +110,7 @@ export const englishCoursesOnline = [
     {
         course: 'Python 3 - Fundamentos',
         school: 'Curso em Vídeo',
-        time: '40 horas',
+        time: '40 hours',
         finish: "14/02/2018",
         site: 'https://www.cursoemvideo.com/course/',
         degree: 'hhttps://drive.google.com/open?id=1bcDat6KslbVOcwHWmoncLGEfRDwRP2yb',
