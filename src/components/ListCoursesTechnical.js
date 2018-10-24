@@ -12,7 +12,7 @@ class ListCoursesTechnical extends Component {
         </div>
         { this.props.courses[this.props.script].map((course) => { return (
             
-            <div className="div border rounded my-3 bg-secondary text-center text-light h6">
+            <div key={course.start} className="div border rounded my-3 bg-secondary text-center text-light h6">
             <div><span className="font-weight-bold h6" style={{color: '#07454F'}}>{course.course}</span> - <span>{course.start}</span> {script[this.props.script][1]} <span>{course.finish}.</span></div>
             <div><span>{course.school}</span> - <span>{course.city}</span></div>
 

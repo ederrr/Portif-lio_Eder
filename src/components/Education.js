@@ -14,7 +14,6 @@ class Education extends Component {
 		}
       }
       componentDidMount(){
-            console.log(this.props.isMobile)
             if(this.props.isMobile)
                   this.setState({col: "12", pos: "0"});
             else

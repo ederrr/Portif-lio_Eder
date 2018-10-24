@@ -19,7 +19,7 @@ class ListProjeto extends Component {
 		return (
 		<div className="justify-content-center py-3">
 
-			{this.state.repos.map((p)=>{return (<ItemProject name={p.name}/>)})}
+			{this.state.repos.map((p)=>{return (<ItemProject key={p.name} name={p.name}/>)})}
 
 		</div>
 		)

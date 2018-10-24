@@ -12,11 +12,11 @@ class Skills extends Component {
                   pos :""
 		}
       }
-      componentDidMount(props){
-            if(this.props.isMobile)
-                  this.setState({col: "12", pos: "0"});
-            else
-                  this.setState({col: "10", pos: "1"});
+    componentDidMount(props){
+		if(this.props.isMobile)
+				this.setState({col: "12", pos: "0"});
+		else
+				this.setState({col: "10", pos: "1"});
 
 	}
 	
@@ -25,13 +25,13 @@ class Skills extends Component {
 		<div className={`col col-${this.state.col} offset-${this.state.pos}`}>
 
 		{skills.map( (skill, i) => { return (
-			<div>
+			<div key={i}>
 				<div className="rounded-top p-1" style={{backgroundColor: '#07454F'}}>
 					<p className="h6 font-weight-bold text-light">{titles[this.props.script][i]}</p>
         		</div>
 				<div className="div d-inline-block w-50">
 					{skill.map( (s) => { return (
-						<p className="h7 col my-1 small styleSkill font-weight-bold text-secondary">{s.name}<div className="progress border bg-white"><div className="progress-bar bg-info" style={{width:`${s.grade*10}%`}}></div></div></p>
+						<div key={s.name} className="h7 col my-1 small styleSkill font-weight-bold text-secondary">{s.name}<div className="progress border bg-white"><div className="progress-bar bg-info" style={{width:`${s.grade*10}%`}}></div></div></div>
 					)})}
 				</div>
 				<div className="d-inline-block align-top w-50 text-center">

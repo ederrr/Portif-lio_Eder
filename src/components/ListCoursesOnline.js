@@ -11,7 +11,7 @@ class ListCoursesLanguage extends Component {
         </div>
         { this.props.courses[this.props.script].map((course) => { return (
             
-            <div className="div border rounded my-3 bg-secondary text-center text-light h6">
+            <div key={course.start} className="div border rounded my-3 bg-secondary text-center text-light h6">
                 <div><span className="font-weight-bold h6" style={{color: '#07454F'}}>{course.course}</span> - <span>{course.school}</span></div>
                 <div><span>{script[this.props.script][1]}: {course.time}</span> - <span>{script[this.props.script][2]}: {course.finish}</span></div>
 

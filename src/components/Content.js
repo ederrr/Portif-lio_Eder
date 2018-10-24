@@ -10,7 +10,7 @@ class Content extends Component {
 		return (
 		<div className="pt-2 pt-md-4 px-1 px-md-5" style={{overflowY: 'auto', height:`${this.props.sizeScreen}` }} >
 			<Route exact path="/" component={ListProject} isMobile={this.props.isMobile} />
-    		<Route path="/Galery" component={Galery} isMobile={this.props.isMobile}/>
+			<Route path="/Galery" render={props => <Galery {...props} isMobile={this.props.isMobile} />} />
 			<Route path="/Education" render={props => <Education {...props} isMobile={this.props.isMobile} />} />
 			<Route path="/Skills" render={props => <Skills {...props} isMobile={this.props.isMobile} />} />
 		</div>
