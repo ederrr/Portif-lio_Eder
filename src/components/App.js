@@ -39,7 +39,7 @@ class App extends Component {
 		</div>
 		<div className="d-inline-block" style={{width:'85%'}}>
 		<Navibar/>
-		<Content sizeScreen={"68vh"} isMobile={true}/>
+		<Content sizeScreen={"72vh"} isMobile={true}/>
 		</div>
 	</div>
 	</Router>
@@ -55,7 +55,7 @@ class App extends Component {
 				</div>
 				<div className="d-inline-block" style={{width:'96%'}}>
 				<Navibar/>
-				<Content sizeScreen={"72vh"} isMobile={false}/>
+				<Content sizeScreen={"76vh"} isMobile={false}/>
 				</div>
 			</div>
 			</Router>

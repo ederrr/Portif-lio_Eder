@@ -16,7 +16,7 @@ class ListCoursesTechnical extends Component {
             <div><span className="font-weight-bold h6" style={{color: '#07454F'}}>{course.course}</span> - <span>{course.start}</span> {script[this.props.script][1]} <span>{course.finish}.</span></div>
             <div><span>{course.school}</span> - <span>{course.city}</span></div>
 
-            <div className="div border rounded bg-light p-1 text-dark p-3" >{course.description}</div>
+            <div className="div border rounded font-weight-normal bg-light p-1 text-dark p-3" >{course.description}</div>
             </div>
         )})}
 		</div>
