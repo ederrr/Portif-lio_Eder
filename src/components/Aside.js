@@ -7,7 +7,7 @@ class Aside extends Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			resume : ["https://drive.google.com/open?id=1OynaM9gh0Id_39kokQhmXtM4NxLzDjWR","https://drive.google.com/open?id=1aD-PY4FAQZYwJT47yM8o_H8VYBQyNHFf","https://drive.google.com/open?id=1aD-PY4FAQZYwJT47yM8o_H8VYBQyNHFf"]
+			resume : ["https://drive.google.com/open?id=12LmvGyYQA_k6gSlNWHn_vTa1jnqXeZCE","https://drive.google.com/open?id=1dRuMVwReZ2MT2WuCVCbJ7LAjzx_L34gU","https://drive.google.com/open?id=1dRuMVwReZ2MT2WuCVCbJ7LAjzx_L34gU"]
 		}
 	}
 	  

@@ -33,7 +33,7 @@ class App extends Component {
 	return (
 	<Provider store={store}>
 	<Router>
-	<div style={{width:'100%', height:'100vh', backgroundColor: '#EEE'}}>
+	<div style={{width:'100%', height:'100vh', backgroundColor: '#DDD'}}>
 		<div className="d-inline-block bg-dark align-top" style={{width:'15%', height:'100%'}}>
 			<Aside />
 		</div>
@@ -49,7 +49,7 @@ class App extends Component {
 		return (
 			<Provider store={store}>
 			<Router>
-			<div style={{width:'100%', height:'100vh', backgroundColor: '#EEE'}}>
+			<div style={{width:'100%', height:'100vh', backgroundColor: '#DDD'}}>
 				<div className="d-inline-block bg-dark align-top" style={{width:'4%', height:'100%'}}>
 					<Aside />
 				</div>
