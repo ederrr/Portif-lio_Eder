@@ -12,7 +12,6 @@ class ListProjeto extends Component {
 
 	componentDidMount(props){
 		fetchRepos().then((res) => {this.setState({repos: res.data})});
-
 	}
 
 	render() {

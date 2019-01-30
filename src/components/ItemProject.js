@@ -6,15 +6,16 @@ class ItemProject extends Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			image: require('../assets/image_default.jpg'),
+			image: `https://raw.githubusercontent.com/ederrr/${this.props.name}/master/image_default.jpg`,
 		}
 	}	
 
 	componentWillMount(props){
-		testImage(this.props.name).then(
-			(res) => { if(res.status === 200) 
-				this.setState({image: `https://raw.githubusercontent.com/ederrr/${this.props.name}/master/image_default.jpg`})			
-			});
+		testImage(this.props.name).catch(
+			(res) => { 
+				this.setState({image: require(`../assets/image_default.jpg`)})			
+			}
+		);
 	}
 
 	render() {
