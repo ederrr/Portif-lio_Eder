@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import {testImage} from '../services/access.api';
 
 class ItemProject extends Component {
@@ -19,21 +20,20 @@ class ItemProject extends Component {
 	}
 
 	render() {
-		console.log(this.state.image)
 		const isMobile = window.innerWidth <= 500;
 		if(isMobile){
 			return (
-				<div className="w-50 d-inline-block px-1 align-top">
+				<Link to={`/DetailProject/${this.props.name}`} className="w-50 d-inline-block px-1 align-top">
 					<img className= "img-fluid w-100 rounded" src={this.state.image} alt="project"></img>
 					<p className="m-0 p-0 text-secondary font-weight-bold">{this.props.name}</p>
-				</div>
+				</Link>
 				)			
 		}else{
 			return (
-			<div className="col col-2 d-inline-block mx-auto mb-3 align-top">
+			<Link to={`/DetailProject/${this.props.name}`} className="col col-2 d-inline-block mx-auto mb-3 align-top">
 				<img className= "img-fluid w-100 rounded" src={this.state.image} alt="project"></img>
 				<p className="m-0 p-0 text-secondary font-weight-bold">{this.props.name}</p>
-			</div>
+			</Link>
 			)
 		}
 	}

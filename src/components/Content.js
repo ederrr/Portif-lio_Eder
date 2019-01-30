@@ -5,6 +5,7 @@ import Galery from './Galery';
 import Skills from './Skills';
 import Education from './Education';
 import Contact from './Contact';
+import DetailProject from './DetailProject';
 
 class Content extends Component {
 	render() {
@@ -16,6 +17,7 @@ class Content extends Component {
 			<Route path="/Contact" render={props => <Contact {...props} isMobile={this.props.isMobile} />} />
 			<Route path="/Education" render={props => <Education {...props} isMobile={this.props.isMobile} />} />
 			<Route path="/Skills" render={props => <Skills {...props} isMobile={this.props.isMobile} />} />
+			<Route exact path="/DetailProject/:name" render={props => <DetailProject {...props} isMobile={this.props.isMobile} />} />
 			<Route component={ListProject} />
 			</Switch>
 		</div>
