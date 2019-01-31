@@ -16,7 +16,7 @@ class ListCoursesLanguage extends Component {
                 <div><span>{script[this.props.script][1]}: {course.time}</span> - <span>{script[this.props.script][2]}: {course.finish}</span></div>
 
                 <div className="div border rounded bg-light p-1 text-dark p-3" ><a href={course.site}>{script[this.props.script][3]}</a>
-                <div><a href={course.degree} target="_blank">{script[this.props.script][4]}</a></div>
+                <div><a href={course.degree} target="_blank" without rel="noopener noreferrer">{script[this.props.script][4]}</a></div>
                 </div>
 
             </div>

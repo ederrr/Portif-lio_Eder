@@ -18,7 +18,6 @@ class Education extends Component {
 			this.setState({col: "12", pos: "0"});
 		else
 			this.setState({col: "10", pos: "1"});
-
 	}
 	render() {
 		return (

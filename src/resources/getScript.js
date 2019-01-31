@@ -5,6 +5,7 @@ export const portugueseCoursesLanguage = ['Idiomas']
 export const portugueseCoursesTechnical = ['Cursos','a']
 export const portugueseCoursesGrade = ['Formação Acadêmica','a']
 export const portugueseContact = ['Entre em Contato','email@gmail.com','Digite sua Mensagem...','Enviar Mensagem', "Outros Contatos", "Whatsapp", "Email"]
+export const portugueseDetail = ['Linguagem','Criado','Atualizado','DD/MM/YYYY']
 
 export const englishNavibar = ['Projects','Galery','Skills','Education','Contact']
 export const englishSkills = ['Programming','Web','Mobile','Design','Modeling']
@@ -13,6 +14,7 @@ export const englishCoursesLanguage = ['Languages']
 export const englishCoursesTechnical = ['Courses','to']
 export const englishCoursesGrade = ['University Degree','to']
 export const englishContact = ['Contact me','email@gmail.com','Type your Text ...', 'Send Message', "Others Contacts", "Whatsapp", "Email"]
+export const englishDetail = ['Language','Created','Updated','MM/DD/YYYY']
 
 export const spanishNavibar = ['Proyectos','Galería','Habilidades','Graduación','Contacto']
 export const spanishSkills = ['Programación','Web','Mobile','Diseño','Modelaje']
@@ -21,6 +23,7 @@ export const spanishCoursesLanguage = ['Idiomas']
 export const spanishCoursesTechnical = ['Cursos','a']
 export const spanishCoursesGrade = ['Formação Acadêmica','a']
 export const spanishContact = ['Entre em Contato','email@gmail.com','Digite sua Mensagem...','Enviar Mensagem', "Outros Contatos", "Whatsapp", "Email"]
+export const spanishDetail = ['Linguagem','Criado','Atualizado','DD/MM/YYYY']
 
 export const navibarScript = [englishNavibar ,portugueseNavibar ,spanishNavibar ];
 export const skillsScript = [englishSkills ,portugueseSkills ,spanishSkills];
@@ -29,3 +32,4 @@ export const coursesLanguageScript = [englishCoursesLanguage ,portugueseCoursesL
 export const coursesTechnicalScript = [englishCoursesTechnical ,portugueseCoursesTechnical ,spanishCoursesTechnical];
 export const coursesGradeScript = [englishCoursesGrade ,portugueseCoursesGrade ,spanishCoursesGrade];
 export const contactScript = [englishContact ,portugueseContact ,spanishContact];
+export const detailScript = [englishDetail ,portugueseDetail ,spanishDetail];
