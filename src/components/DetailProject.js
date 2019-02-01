@@ -14,16 +14,9 @@ class DetailProject extends Component {
 			language: '',
 			created: '00/00/0000',
 			updated: '00/00/0000',
-			col :"",
-			pos :""
 		}
 	}
-	componentDidMount(){
-		if(this.props.isMobile)
-			this.setState({col: "12", pos: "0"});
-		else
-			this.setState({col: "10", pos: "1"});
-	}
+
 	componentWillMount(props){
 		testImage(this.props.match.params.name).catch(
 			(res) => { 
@@ -44,7 +37,7 @@ class DetailProject extends Component {
 
 	render() {
 		return (
-			<div className={`row col-${this.state.col} offset-${this.state.pos}`}>
+			<div className={`row col-md-10 col-12 offset-md-1 offset-0`}>
         		<div className="rounded-top col col-12 p-1" style={{backgroundColor: '#07454F'}}>
 					<p className="h6 text-white" >{this.state.name}</p>
         		</div>

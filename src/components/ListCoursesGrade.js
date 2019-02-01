@@ -5,7 +5,7 @@ import {coursesGradeScript as script} from '../resources/getScript'
 class ListCoursesGade extends Component {
 	render() {
 		return (
-		<div className={`col col-${this.props.col} offset-${this.props.pos}`}>
+		<div className={`col col-md-10 offset-md-1 col-12 offset-0`}>
         <div className="rounded-top p-1" style={{backgroundColor: '#07454F'}}>
             <p className="h6 text-white" >{script[this.props.script][0]}</p>
         </div>

@@ -10,15 +10,15 @@ import DetailProject from './DetailProject';
 class Content extends Component {
 	render() {
 		return (
-		<div className="pt-2 pt-md-4 px-1 px-md-5" style={{overflowY: 'auto', height:`${this.props.sizeScreen}` }} >
+		<div className="pt-4 h-75 w-100" style={{overflowY: 'auto'}} >
 			<Switch>
-			<Route exact path="/" component={ListProject} />
-			<Route path="/Galery" render={(props) => <Galery {...props} isMobile={this.props.isMobile} />} />
-			<Route path="/Contact" render={props => <Contact {...props} isMobile={this.props.isMobile} />} />
-			<Route path="/Education" render={props => <Education {...props} isMobile={this.props.isMobile} />} />
-			<Route path="/Skills" render={props => <Skills {...props} isMobile={this.props.isMobile} />} />
-			<Route exact path="/DetailProject/:name" render={props => <DetailProject {...props} isMobile={this.props.isMobile} />} />
-			<Route component={ListProject} />
+				<Route exact path="/" component={ListProject} />
+				<Route path="/Galery" render={(props) => <Galery {...props} />} />
+				<Route path="/Contact" render={props => <Contact {...props} />} />
+				<Route path="/Education" render={props => <Education {...props} />} />
+				<Route path="/Skills" render={props => <Skills {...props} />} />
+				<Route exact path="/DetailProject/:name" render={props => <DetailProject {...props} />} />
+				<Route component={ListProject} />
 			</Switch>
 		</div>
 		)

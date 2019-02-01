@@ -5,25 +5,9 @@ import {connect} from 'react-redux';
 
 class Skills extends Component {
 	
-	constructor(props){
-		super(props)
-		this.state = {
-                  col :"",
-				  pos :"",
-				  icon: ""
-		}
-      }
-    componentDidMount(props){
-		if(this.props.isMobile)
-				this.setState({col: "12", pos: "0", icon: "12"});
-		else
-				this.setState({col: "10", pos: "1", icon: "7"});
-
-	}
-	
 	render() {
 		return (
-		<div className={`col col-${this.state.col} offset-${this.state.pos}`}>
+		<div className={`col col-md-10 offset-md-1 col-12 offset-0`}>
 
 		{skills.map( (skill, i) => { return (
 			<div key={i}>
@@ -31,7 +15,7 @@ class Skills extends Component {
 					<p className="h6 font-weight-bold text-light">{titles[this.props.script][i]}</p>
         		</div>
 				<div className="row vertical-align-middle py-4">
-					<div className={`col col-${this.state.icon} d-inline-block w-50`}>
+					<div className={`col col-md-7 col-12 d-inline-block w-50`}>
 						{skill.map( (s) => { return (
 							<div key={s.name} className="h7 col my-1 small styleSkill font-weight-bold text-secondary">{s.name}<div className="progress border bg-white"><div className="progress-bar bg-info" style={{width:`${s.grade*10}%`}}></div></div></div>
 						)})}

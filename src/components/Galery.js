@@ -6,18 +6,11 @@ class Galery extends Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			col : "",
 			selected: ["active","",""],
 			position: 0,
 			image: galery[0][0].image
 		}
       }
-      componentDidMount(){
-            if(this.props.isMobile)
-                this.setState({col: "12",col2: "12"});
-            else
-                this.setState({col: "7", col2: "5"});
-	}
 
 	changeImage(pos){
 		let temp_selected = ["","",""];
@@ -40,7 +33,7 @@ class Galery extends Component {
 	render() {
 		return (
 			<div className="row px-0 mx-0">
-				<div id="carouselExampleIndicators" className={`col py-2 col-${this.state.col}carousel slide`}>
+				<div id="carouselExampleIndicators" className={`col py-2 col-md-7 col-12 carousel slide`}>
 					<ol className="carousel-indicators">
 						<li className={`${this.state.selected[0]} border border-black`} onClick={()=>this.changeImage(0)}></li>
 						<li className={`${this.state.selected[1]} border border-black`} onClick={()=>this.changeImage(1)}></li>
@@ -58,7 +51,7 @@ class Galery extends Component {
 						<span className="carousel-control-next-icon"></span>
 					</div>
 				</div>
-				<div className={`col col-${this.state.col2} my-md-auto`}>
+				<div className={`col col-md-5 col-12 my-md-auto`}>
 					<p className="text-center font-weight-bold h6" style={{color: '#07454F'}}>{galery[this.props.script][this.state.position].title}</p>
 					<p className="text-center">{galery[this.props.script][this.state.position].description}</p>
 				</div>

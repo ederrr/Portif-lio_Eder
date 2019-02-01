@@ -20,7 +20,7 @@ class Navibar extends Component {
 
 	render() {
     return (
-		<div className="d-flex justify-content-center mx-auto mx-md-5 p-0 border-bottom border-white">
+		<div className="d-flex justify-content-center mx-auto mx-md-5 px-0 py-md-2 py-0 border-bottom border-white">
 			<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet"/>
 			<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
 			<div className="text-secondary pr-md-5 mt-3 " style={{fontFamily:'Yanone Kaffeesatz'}}>

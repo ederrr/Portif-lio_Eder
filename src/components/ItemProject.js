@@ -20,22 +20,14 @@ class ItemProject extends Component {
 	}
 
 	render() {
-		const isMobile = window.innerWidth <= 500;
-		if(isMobile){
-			return (
-				<Link to={`/DetailProject/${this.props.name}`} className="w-50 d-inline-block px-1 align-top">
-					<img className= "img-fluid w-100 rounded" src={this.state.image} alt="project"></img>
-					<p className="m-0 p-0 text-secondary font-weight-bold">{this.props.name}</p>
-				</Link>
-				)			
-		}else{
-			return (
-			<Link to={`/DetailProject/${this.props.name}`} className="col col-2 d-inline-block mx-auto mb-3 align-top">
+		
+		return (
+			<Link to={`/DetailProject/${this.props.name}`} className="col col-md-2 col-6 d-inline-block mx-auto px-md-3 px-1 mb-3 align-top">
 				<img className= "img-fluid w-100 rounded" src={this.state.image} alt="project"></img>
 				<p className="m-0 p-0 text-secondary font-weight-bold">{this.props.name}</p>
 			</Link>
-			)
-		}
+		)
+
 	}
 }
 
