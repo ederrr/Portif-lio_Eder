@@ -13,7 +13,7 @@ class Aside extends Component {
 	  
   	render() {
 	return (
-		<div className="d-flex flex-column my-auto mx-auto">
+		<div className="d-flex flex-column col col-xl-6 col-md-10 col-lg-8 mx-0 col-12 flex-fill justify-content-center bg-dark py-auto">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 			<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/eder-ribeiro-263642141/"><span className="fa fa-linkedin text-white pt-5 pb-3" style={icon}/> </a>
 			<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/eder.ribeiro.180"><span className="fa fa-facebook text-white py-3" style={icon}/> </a>

@@ -32,7 +32,7 @@ class Galery extends Component {
 
 	render() {
 		return (
-			<div className="row px-0 mx-0">
+			<div className="row px-md-5 mx-0">
 				<div id="carouselExampleIndicators" className={`col py-2 col-md-7 col-12 carousel slide`}>
 					<ol className="carousel-indicators">
 						<li className={`${this.state.selected[0]} border border-black`} onClick={()=>this.changeImage(0)}></li>
