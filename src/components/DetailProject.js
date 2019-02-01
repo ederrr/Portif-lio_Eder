@@ -53,9 +53,9 @@ class DetailProject extends Component {
 				</div>
 				<div className="col col-md-7 col-12 my-4">
 					<p className="" ><label></label>{this.state.description}</p>
-					<p className="text" ><label className="h6">{script[this.props.script][0]}:</label> {this.state.language}</p>
-					<p className="h6" >{script[this.props.script][1]}: <Moment format={script[this.props.script][3]} className="small" >{this.state.created}</Moment></p>
-					<p className="h6" >{script[this.props.script][2]}: <Moment format={script[this.props.script][3]} className="small" >{this.state.updated}</Moment></p>
+					<p className="text" ><label className="h6 text-secondary">{script[this.props.script][0]}:</label> {this.state.language}</p>
+					<p className="h6 text-secondary" >{script[this.props.script][1]}: <Moment format={script[this.props.script][3]} className="small" >{this.state.created}</Moment></p>
+					<p className="h6 text-secondary" >{script[this.props.script][2]}: <Moment format={script[this.props.script][3]} className="small" >{this.state.updated}</Moment></p>
 				</div>
 			</div>
 		)
