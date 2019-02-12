@@ -17,7 +17,7 @@ class App extends Component {
 					<div className="col col-2 col-md-1 d-flex flex-column flex-fill p-0">
 						<Aside />
 					</div>
-					<div className="col col-10 col-md-11 p-0">
+					<div className="col col-10 col-md-11 h-100">
 						<Navibar/>
 						<Content />
 					</div>
